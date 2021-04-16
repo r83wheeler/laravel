@@ -19,6 +19,7 @@ class CreateBooksTable extends Migration
             $table->text("excerpt");
             $table->char("isbn", 13);
             $table->double('cost');
+            $table->text('genre');
             $table->integer("pages");
             $table->double('value');
             $table->datetime('released');
