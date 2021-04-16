@@ -22,6 +22,6 @@ Route::get('/books/all', [App\Http\Controllers\BookController::class, 'index']);
 
 Route::post('/books/new', [App\Http\Controllers\BookController::class, 'create']);
 
-Route::post('/books/update/(id)', [App\Http\Controllers\BookController::class, 'update']);
+Route::post('/books/update/{id}', [App\Http\Controllers\BookController::class, 'update']);
 
-Route::post('/books/delete/(id)', [App\Http\Controllers\BookController::class, 'delete']);
+Route::post('/books/delete/{id}', [App\Http\Controllers\BookController::class, 'delete']);
